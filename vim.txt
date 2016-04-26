@@ -1,0 +1,298 @@
+mapleader = ","
+#################################################
+# undotree
+#################################################
+<leader>e
+
+#################################################
+# bookmarks
+#################################################
+Action                                     | Shortcut | Command
+Add/remove bookmark at current line        | mm       | :BookmarkToggle
+Add/edit/remove annotation at current line | mi       | :BookmarkAnnotate <TEXT>
+Jump to next bookmark in buffer            | mn       | :BookmarkNext
+Jump to previous bookmark in buffer        | mp       | :BookmarkPrev
+Show all bookmarks (toggle)                | ma       | :BookmarkShowAll
+Clear bookmarks in current buffer only     | mc       | :BookmarkClear
+Clear bookmarks in all buffers             | mx       | :BookmarkClearAll
+Move up bookmark at current line           | mkk      | :BookmarkMoveUp
+Move down bookmark at current line         | mjj      | :BookmarkMoveDown
+Save all bookmarks to a file               |          | :BookmarkSave <FILE_PATH>
+Load bookmarks from a file                 |          | :BookmarkLoad <FILE_PATH>
+
+#################################################
+# NERDTree
+#################################################
+Use <C-E> to toggle NERDTree
+Use <leader>e or <leader>nt to load NERDTreeFind which opens NERDTree where the current file is located.
+Hide clutter ('.pyc', '.git', '.hg', '.svn', '.bzr')
+Treat NERDTree more like a panel than a split.
+commands: NERDTree, Bookmark
+Default  Description~                                             help-tag~
+Key~
+
+o.......Open files, directories and bookmarks....................|NERDTree-o|
+go......Open selected file, but leave cursor in the NERDTree.....|NERDTree-go|
+t.......Open selected node/bookmark in a new tab.................|NERDTree-t|
+T.......Same as 't' but keep the focus on the current tab........|NERDTree-T|
+i.......Open selected file in a split window.....................|NERDTree-i|
+gi......Same as i, but leave the cursor on the NERDTree..........|NERDTree-gi|
+s.......Open selected file in a new vsplit.......................|NERDTree-s|
+gs......Same as s, but leave the cursor on the NERDTree..........|NERDTree-gs|
+O.......Recursively open the selected directory..................|NERDTree-O|
+x.......Close the current nodes parent...........................|NERDTree-x|
+X.......Recursively close all children of the current node.......|NERDTree-X|
+e.......Edit the current dir.....................................|NERDTree-e|
+
+<CR>...............same as |NERDTree-o|.
+double-click.......same as the |NERDTree-o| map.
+middle-click.......same as |NERDTree-i| for files, same as
+                   |NERDTree-e| for dirs.
+
+D.......Delete the current bookmark .............................|NERDTree-D|
+
+P.......Jump to the root node....................................|NERDTree-P|
+p.......Jump to current nodes parent.............................|NERDTree-p|
+K.......Jump up inside directories at the current tree depth.....|NERDTree-K|
+J.......Jump down inside directories at the current tree depth...|NERDTree-J|
+<C-J>...Jump down to the next sibling of the current directory...|NERDTree-C-J|
+<C-K>...Jump up to the previous sibling of the current directory.|NERDTree-C-K|
+
+C.......Change the tree root to the selected dir.................|NERDTree-C|
+u.......Move the tree root up one directory......................|NERDTree-u|
+U.......Same as 'u' except the old root node is left open........|NERDTree-U|
+r.......Recursively refresh the current directory................|NERDTree-r|
+R.......Recursively refresh the current root.....................|NERDTree-R|
+m.......Display the NERD tree menu...............................|NERDTree-m|
+cd......Change the CWD to the dir of the selected node...........|NERDTree-cd|
+CD......Change tree root to the CWD..............................|NERDTree-CD|
+
+I.......Toggle whether hidden files displayed....................|NERDTree-I|
+f.......Toggle whether the file filters are used.................|NERDTree-f|
+F.......Toggle whether files are displayed.......................|NERDTree-F|
+B.......Toggle whether the bookmark table is displayed...........|NERDTree-B|
+
+q.......Close the NERDTree window................................|NERDTree-q|
+A.......Zoom (maximize/minimize) the NERDTree window.............|NERDTree-A|
+?.......Toggle the display of the quick help.....................|NERDTree-?|
+
+------------------------------------------------------------------------------
+https://github.com/scrooloose/nerdtree/blob/master/doc/NERD_tree.txt
+
+#################################################
+# ctrlp
+#################################################
+<c-p>
+local:
+map <leader>pb :CtrlPBuffer<Cr>
+map <leader>pt :CtrlPTag<Cr>
+map <leader>pp :CtrlP<Cr>
+Press <F5> to purge the cache for the current directory to get new files, remove deleted files and apply new ignore options.
+Press <c-f> and <c-b> to cycle between modes.
+Press <c-d> to switch to filename search instead of full path.
+Press <c-r> to switch to regexp mode.
+Use <c-j>, <c-k> or the arrow keys to navigate the result list.
+Use <c-t> or <c-v>, <c-x> to open the selected entry in a new tab or in a new split.
+Use <c-n>, <c-p> to select the next/previous string in the prompt's history.
+Use <c-y> to create a new file and its parent directories.
+Use <c-z> to mark/unmark multiple files and <c-o> to open them.
+Run :help ctrlp-mappings or submit ? in CtrlP for more mapping help.
+
+Submit two or more dots .. to go up the directory tree by one or multiple levels.
+End the input with a colon : followed by a command to execute it after opening the file:
+Use :25 to jump to line 25.
+Use :/any\:\ string to jump to the first instance of any: string.
+Use :+setfiletype\ myfiletype|25 to set the filetype to myfiletype then jump to line 25.
+Use :diffthis when opening files marked by <c-z> to run :diffthis on the first 4 files.
+
+https://github.com/kien/ctrlp.vim/blob/master/doc/ctrlp.txt
+http://kien.github.io/ctrlp.vim/
+
+#################################################
+# Surround
+#################################################
+  Old text                  Command     New text
+  "Hello *world!"           ds"         Hello world!
+  [123+4*56]/2              cs])        (123+456)/2
+  "Look ma, I'm *HTML!"     cs"<q>      <q>Look ma, I'm HTML!</q>
+  if *x>3 {                 ysW(        if ( x>3 ) {
+  my $str = *whee!;         vllllS'     my $str = 'whee!';
+  Hel*lo world!             ysiw]       [Hello] world! #] no space, [ with space
+  { Hello } wor*ld!         yss)        ({ Hello } world!)
+  Visual mode:
+  <em>Hello</em> world!     S<p class="important">
+  <p class="important">
+  <em>Hello</em> world!
+  </p>
+
+#################################################
+# NERDCommenter
+#################################################
+<Leader>c<space> in Visual or Normal mode
+[count]<leader>cc |NERDComComment|
+Comment out the current line or text selected in visual mode.
+
+[count]<leader>cn |NERDComNestedComment|
+Same as <leader>cc but forces nesting.
+
+[count]<leader>c<space> |NERDComToggleComment|
+Toggles the comment state of the selected line(s). If the topmost selected line is commented, all selected lines are uncommented and vice versa.
+
+[count]<leader>cm |NERDComMinimalComment|
+Comments the given lines using only one set of multipart delimiters.
+
+[count]<leader>ci |NERDComInvertComment|
+Toggles the comment state of the selected line(s) individually.
+
+[count]<leader>cs |NERDComSexyComment|
+Comments out the selected lines ``sexily''
+
+[count]<leader>cy |NERDComYankComment|
+Same as <leader>cc except that the commented line(s) are yanked first.
+
+<leader>c$ |NERDComEOLComment|
+Comments the current line from the cursor to the end of line.
+
+<leader>cA |NERDComAppendComment|
+Adds comment delimiters to the end of line and goes into insert mode between them.
+
+|NERDComInsertComment|
+Adds comment delimiters at the current cursor position and inserts between. Disabled by default.
+
+<leader>ca |NERDComAltDelim|
+Switches to the alternative set of delimiters.
+
+[count]<leader>cl
+[count]<leader>cb |NERDComAlignedComment|
+Same as |NERDComComment| except that the delimiters are aligned down the left side (<leader>cl) or both sides (<leader>cb).
+
+[count]<leader>cu |NERDComUncommentLine|
+Uncomments the selected line(s).
+
+https://github.com/scrooloose/nerdcommenter/blob/master/doc/NERD_commenter.txt
+
+#################################################
+# neocomplete
+#################################################
+Just start typing, it will autocomplete where possible
+Automatically present the autocomplete menu
+Support tab and enter for autocomplete
+<C-k> for completing snippets using Neosnippet.
+
+#################################################
+# session
+#################################################
+nmap <leader>sl :SessionList<CR>
+nmap <leader>ss :SessionSave<CR>
+nmap <leader>sc :SessionClose<CR>
+https://github.com/vim-scripts/sessionman.vim
+
+#################################################
+# Fugitive
+#################################################
+<leader>gs :Gstatus
+<leader>gd :Gdiff
+<leader>gc :Gcommit
+<leader>gb :Gblame
+<leader>gl :Glog
+<leader>gp :Git push
+<leader>gw :Gwrite
+https://github.com/tpope/vim-fugitive/blob/master/doc/fugitive.txt
+
+#################################################
+# Tabularize
+#################################################
+<Leader>a= :Tabularize /=<CR>
+<Leader>a: :Tabularize /:<CR>
+<Leader>a:: :Tabularize /:\zs<CR>
+<Leader>a, :Tabularize /,<CR>
+<Leader>a<Bar> :Tabularize /<Bar><CR>
+
+#################################################
+# Tagbar
+#################################################
+<Leader>tt to toggle the tagbar panel
+
+#################################################
+# EasyMotion
+#################################################
+<Leader><Leader>w word mode
+<Leader><Leader>f find mode
+<Leader><Leader>j down
+<Leader><Leader>k up
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
+
+#################################################
+# Folding
+#################################################
+zf#j creates a fold from the cursor down # lines.
+zf/string creates a fold from the cursor to string.
+zj moves the cursor to the next fold.
+zk moves the cursor to the previous fold.
+zo opens a fold at the cursor.
+zO opens all folds at the cursor.
+zm increases the foldlevel by one.
+zM closes all open folds.
+zr decreases the foldlevel by one.
+zR decreases the foldlevel to zero -- all folds will be open.
+zd deletes the fold at the cursor.
+zE deletes all folds.
+[z move to start of open fold.
+]z move to end of open fold.
+Saving folds
+
+After you've gone to all the trouble of creating several folds in a longer document, it'd be a shame to lose them when you close the file. If you'd like to save the folds before you leave the file, run :mkview. When you reload the file, run :loadview, and Vim will restore the folds to the state the file was in at the time you ran :mkview.
+
+The :mkview command supports multiple revisions of a file's state, so you can give a view a number and reload later on. For example, if you run :mkview 2, make a few changes, and then run :loadview 2, it will revert to the previous state of the file as far as folds are concerned. Note that it won't restore the file itself to the previous state; if you delete 10 lines of text after saving a view, Vim won't restore those lines when you load an older view using :loadview.
+
+But why do something manually when you can do it automatically? To see to it that Vim saves and restores folds when a file is closed and re-opened, add these two lines to your ~/.vimrc:
+
+au BufWinLeave * mkview
+au BufWinEnter * silent loadview
+
+#################################################
+# vim-bookmarks
+#################################################
+Action | Shortcut | Command
+Add/remove bookmark at current line | mm | :BookmarkToggle
+Add/edit/remove annotation at current line | mi | :BookmarkAnnotate <TEXT>
+Jump to next bookmark in buffer | mn | :BookmarkNext
+Jump to previous bookmark in buffer | mp | :BookmarkPrev
+Show all bookmarks (toggle) | ma | :BookmarkShowAll
+Clear bookmarks in current buffer only | mc | :BookmarkClear
+Clear bookmarks in all buffers | mx | :BookmarkClearAll
+Move up bookmark at current line | mkk | :BookmarkMoveUp
+Move down bookmark at current line | mjj | :BookmarkMoveDown
+Save all bookmarks to a file |  | :BookmarkSave <FILE_PATH>
+Load bookmarks from a file |  | :BookmarkLoad <FILE_PATH>
+
+Option | Default | Description
+let g:bookmark_sign = '>>' | ⚑ | Sets bookmark icon for sign column
+let g:bookmark_annotation_sign = '##' | ☰ | Sets bookmark annotation icon for sign column
+let g:bookmark_save_per_working_dir = 1 | 0 | Save bookmarks per working dir, the folder you opened vim from
+let g:bookmark_auto_save = 0 | 1 | Enables/disables automatic saving for bookmarks
+let g:bookmark_manage_per_buffer = 1 | 0 | Save bookmarks when leaving a buffer, load when entering one
+let g:bookmark_auto_save_file = '/bookmarks' | $HOME .'/.vim-bookmarks' | Sets file for auto saving (ignored when bookmark_save_per_working_dir is enabled)
+let g:bookmark_auto_close = 1 | 0 | Automatically close bookmarks split when jumping to a bookmark
+let g:bookmark_highlight_lines = 1 | 0 | Enables/disables line highlighting
+let g:bookmark_show_warning = 0 | 1 | Enables/disables warning when clearing all bookmarks
+let g:bookmark_show_toggle_warning = 0 | 1 | Enables/disables warning when toggling to clear a bookmark with annotation
+let g:bookmark_center = 1 | 0 | Enables/disables line centering when jumping to bookmark
+let g:bookmark_no_default_key_mappings = 1 | 0 | Prevent any default key mapping from being created
+https://github.com/MattesGroeger/vim-bookmarks
+
+
+Amazing Colors
+spf13-vim includes solarized and spf13 vim color pack:
+
+ir_black
+molokai
+peaksea
+
+curl https://j.mp/spf13-vim3 -L -o - | sh
+cd $HOME/to/spf13-vim/
+git pull
+vim +BundleInstall! +BundleClean +q

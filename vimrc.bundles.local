@@ -1,0 +1,8 @@
+Bundle 'maxbrunsfeld/vim-emacs-bindings'
+Bundle 'm-kat/aws-vim'
+Bundle 'ngmy/vim-rubocop'
+Bundle 'chase/vim-ansible-yaml'
+Bundle 'mitsuhiko/vim-jinja'
+Bundle 'MattesGroeger/vim-bookmarks'
+let g:AWSVimValidate = 1
+Bundle 'vim-ruby/vim-ruby'
