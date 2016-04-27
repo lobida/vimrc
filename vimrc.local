@@ -6,7 +6,7 @@ colorscheme molokai
 " source $MYVIMRC reloads the saved $MYVIMRC
 :nmap <Leader>s :source $MYVIMRC
 " fix e484 windows https://github.com/mattn/gist-vim/issues/48
-if has('win32') || has('win64') || has('windows')
+if !LINUX()
     set shell=cmd
     set shellcmdflag=/c
 endif
