@@ -1,3 +1,4 @@
+colorscheme molokai
 :vmap sb "zdi<b><C-R>z</b><Esc> : wrap <b></b> around visually selected text
 :vmap st "zdi<?= <C-R>z ?><Esc> : wrap <?= ?> around visually selected text
 :vmap se "zdi<%= <C-R>z %><Esc> : wrap <?= ?> around visually selected text
@@ -5,9 +6,11 @@
 " source $MYVIMRC reloads the saved $MYVIMRC
 :nmap <Leader>s :source $MYVIMRC
 " fix e484 windows https://github.com/mattn/gist-vim/issues/48
-if has('win32') || has('win64')
+if has('win32') || has('win64') || has('windows')
     set shell=cmd
     set shellcmdflag=/c
+endif
+if !has('gui') && LINUX()
 endif
 " fix e484 windows
 set guifont=DejaVu\ Sans\ Mono:h11
