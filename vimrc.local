@@ -2,6 +2,9 @@
 if $TMUX == ''
     set clipboard+=unnamed
 endif
+if exists('$TMUX')
+    set term=screen-256color
+endif
 "set clipboard=unnamed
 " Disable cursorline as it slows vim considerably
 :set cursorline
