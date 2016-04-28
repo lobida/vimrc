@@ -1,8 +1,24 @@
-colorscheme molokai
-:vmap sb "zdi<b><C-R>z</b><Esc> : wrap <b></b> around visually selected text
-:vmap st "zdi<?= <C-R>z ?><Esc> : wrap <?= ?> around visually selected text
-:vmap se "zdi<%= <C-R>z %><Esc> : wrap <?= ?> around visually selected text
-:vmap sr "zdi<% <C-R>z %><Esc> : wrap <?= ?> around visually selected text
+" http://stackoverflow.com/questions/11404800/fix-vim-tmux-yank-paste-on-unnamed-register
+if $TMUX == ''
+    set clipboard+=unnamed
+endif
+"set clipboard=unnamed
+" Disable cursorline as it slows vim considerably
+:set cursorline
+
+" Disable folding
+set nofoldenable
+" set right encoding to prevent strange chars
+set encoding=utf-8
+set fileencodings=utf-8
+set fileformat=unix
+set wrap
+
+" vmap for erb (helpless?)
+":vmap sb "zdi<b><C-R>z</b><Esc> : wrap <b></b> around visually selected text
+":vmap st "zdi<?= <C-R>z ?><Esc> : wrap <?= ?> around visually selected text
+":vmap se "zdi<%= <C-R>z %><Esc> : wrap <?= ?> around visually selected text
+":vmap sr "zdi<% <C-R>z %><Esc> : wrap <?= ?> around visually selected text
 " source $MYVIMRC reloads the saved $MYVIMRC
 :nmap <Leader>s :source $MYVIMRC
 " fix e484 windows https://github.com/mattn/gist-vim/issues/48
@@ -12,11 +28,6 @@ if !LINUX()
 endif
 if !has('gui') && LINUX()
 endif
-" fix e484 windows
-set guifont=DejaVu\ Sans\ Mono:h11
-set fileformat=unix
-set wrap
-set clipboard=unnamed
 " Ctrlp key mapping
 map <leader>pb :CtrlPBuffer<Cr>
 map <leader>pt :CtrlPTag<Cr>
@@ -59,3 +70,36 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#show_buffers = 0
+let g:airline#extensions#tabline#show_tab_nr = 0
+let g:airline#extensions#tabline#show_tab_type = 0
+let g:airline#extensions#tabline#left_sep = ''
+let g:airline#extensions#tabline#left_alt_sep = ''
+let g:airline#extensions#tabline#right_sep = ''
+let g:airline#extensions#tabline#right_alt_sep = ''
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+let g:airline#extensions#tabline#tab_min_count = 1
+let g:airline#extensions#tabline#show_close_button = 0
+let g:airline_detect_modified=1
+let g:airline_theme='solarized'
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = ''
+let g:airline_right_sep = '«'
+let g:airline_right_sep = ''
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+
+" use powerline fonts
+let g:airline_powerline_fonts = 0
+if has('gui_running')
+    set guifont=DejaVu\ Sans\ Mono:h11
+endif
