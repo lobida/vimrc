@@ -142,3 +142,54 @@ set -g status-justify centre
 unbind Up bind Up new-window -d -n tmp \; swap-pane -s tmp.1 \; select-window -t tmp
 unbind Down
 bind Down last-window \; swap-pane -s tmp.1 \; kill-window -t tmp
+
+                 .---------------.
+                ( server options  )
+                 `---------------'
+
+===========================================================
+
+              .----------------------.
+             ( global session options )    base-index 1
+              `---------+--+---------'     visual-bell on
+                     --/    \--
+                  --/          \--
+           +-----/-----+    +-----\-----+
+           | session X |    | session Y |
+           +-----------+    +-----------+
+           base-index 0     visual-bell off
+
+  effective values for X:
+      base-index 0     (set)
+      visual-bell on   (global)
+
+  effective values for Y:
+      base-index 1     (global)
+      visual-bell off  (set)
+
+===========================================================
+
+              .---------------------.
+             ( global window options )    pane-base-index 1
+              `---------+++---------'     mode-keys emacs
+                    ---/ | \---
+                 --/     |     \---
+             ---/        |         \---
+         ---/            |             \---
++-------/----+    +------+-----+    +------\-----+
+| window X.0 |    | window X.1 |    | window Y.0 |
++------------+    +------------+    +------------+
+pane-base-index 0                   mode-keys vi
+mode-keys vi
+
+  effective values for X.0:
+      pane-base-index 0   (set)
+      mode-keys vi        (set)
+
+  effective values for X.1:
+      pane-base-index 1   (global)
+      mode-keys emacs     (global)
+
+  effective values for Y.0:
+      pane-base-index 1   (global)
+      mode-keys vi        (set)

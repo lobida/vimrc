@@ -1,0 +1,32 @@
+  sudo apt-get install virtualenv
+  sudo apt-get install tmux
+  sudo apt-get install virtualenvwrapper 
+  sudo apt-get install vagrant
+  sudo apt-get install vagrant
+  sudo apt-get install python-dev 
+  sudo apt-get install exuberant-ctags 
+  sudo apt-get install virtualenvwrapper 
+  sudo apt-get install apt-transport-https ca-certificate
+  sudo apt-get install apt-transport-https ca-certificates
+  sudo apt-get update
+  sudo apt-get purge lxc-docker
+  sudo apt-get upgrade 
+  sudo apt-get install docker-engine
+  sudo apt-get remove vim vim-common vim-tiny vim-runtime
+  sudo apt-get install vim-nox
+  sudo apt-get install ubuntu-server
+  rvm gemset create online
+  rvm install 2.3
+  rvm --default use ruby-2.3.0@online
+  gem sources --add https://ruby.taobao.org/ --remove https://rubygems.org/
+  gem install sinatra
+  gem install bundle
+  gem install knife-solo
+  gem install knife-solo_data_bag
+  gem install rest-client
+  pip install awscli
+  pip install python-heatclient
+  pip install aliyuncli
+  pip install python-heatclient
+  pip install python-novaclient
+  pip install python-keystoneclient
