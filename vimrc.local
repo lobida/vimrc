@@ -115,15 +115,15 @@ endif
 if count(g:spf13_bundle_groups, 'neocomplete')
     let g:neosnippet#snippets_directory = '~/.vim/bundle/vim-snippets/snippets,~/.mysnippets'
     let g:neosnippet#scope_aliases = {}
+    let g:neosnippet#scope_aliases['j2'] = 'ansible_template'
+    let g:neosnippet#scope_aliases['yml'] = 'ansible'
     let g:neosnippet#scope_aliases['ruby'] = 'general'
     let g:neosnippet#scope_aliases['sh'] = 'general'
 endif
 
 " ansible-vim
-au BufNewFile,BufRead hosts set filetype=ansible_hosts
-au BufNewFile,BufRead *.j2 set filetype=ansible_template
+au BufNewFile,BufRead *.ab set filetype=ansible_hosts
 au BufNewFile,BufRead ansible.cfg set filetype=ansible
-au BufNewFile,BufRead *.yml set filetype=ansible
 let g:ansible_extra_syntaxes = "sh.vim ruby.vim"
 let g:ansible_attribute_highlight = "ob"
 let g:ansible_name_highlight = 'd'

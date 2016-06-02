@@ -1,20 +1,23 @@
   sudo apt-get install virtualenv
   sudo apt-get install tmux
-  sudo apt-get install virtualenvwrapper 
+  sudo apt-get install virtualenvwrapper
   sudo apt-get install vagrant
-  sudo apt-get install vagrant
-  sudo apt-get install python-dev 
-  sudo apt-get install exuberant-ctags 
-  sudo apt-get install virtualenvwrapper 
-  sudo apt-get install apt-transport-https ca-certificate
+  sudo apt-get install python-dev
+  sudo apt-get install exuberant-ctags
+  sudo apt-get install virtualenvwrapper
   sudo apt-get install apt-transport-https ca-certificates
+  sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+  /etc/apt/sources.list.d/docker.list
+  deb https://apt.dockerproject.org/repo ubuntu-xenial main
+  /etc/apt/sources.list.d/virtualbox.list
+  deb http://download.virtualbox.org/virtualbox/debian xenial contrib
   sudo apt-get update
   sudo apt-get purge lxc-docker
-  sudo apt-get upgrade 
+  sudo apt-get upgrade
   sudo apt-get install docker-engine
-  sudo apt-get remove vim vim-common vim-tiny vim-runtime
   sudo apt-get install vim-nox
   sudo apt-get install ubuntu-server
+  sudo apt-get install virtualbox-5.0
   rvm gemset create online
   rvm install 2.3
   rvm --default use ruby-2.3.0@online
