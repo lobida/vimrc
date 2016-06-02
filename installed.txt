@@ -21,15 +21,17 @@
   rvm gemset create online
   rvm install 2.3
   rvm --default use ruby-2.3.0@online
+  rvm docs generate-ri
   gem sources --add https://ruby.taobao.org/ --remove https://rubygems.org/
   gem install sinatra
   gem install bundle
   gem install knife-solo
   gem install knife-solo_data_bag
   gem install rest-client
+  mkvirtualenv online
   pip install awscli
   pip install python-heatclient
   pip install aliyuncli
-  pip install python-heatclient
   pip install python-novaclient
   pip install python-keystoneclient
+  pip install aliyun-python-sdk-oss
