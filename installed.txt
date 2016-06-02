@@ -5,6 +5,7 @@
   sudo apt-get install python-dev
   sudo apt-get install exuberant-ctags
   sudo apt-get install virtualenvwrapper
+  sudo apt-get install cifs-utils
   sudo apt-get install apt-transport-https ca-certificates
   sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
   /etc/apt/sources.list.d/docker.list
@@ -29,6 +30,8 @@
   gem install knife-solo_data_bag
   gem install rest-client
   mkvirtualenv online
+  edit virtualenvs/postactivate
+  complete -C '/home/jaywang/.virtualenvs/online/bin/aws_completer' aws
   pip install awscli
   pip install python-heatclient
   pip install aliyuncli
