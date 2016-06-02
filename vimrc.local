@@ -30,8 +30,6 @@ if !LINUX()
     set shell=cmd
     set shellcmdflag=/c
 endif
-if !has('gui') && LINUX()
-endif
 " Ctrlp key mapping
 map <leader>pb :CtrlPBuffer<Cr>
 map <leader>pt :CtrlPTag<Cr>
@@ -63,7 +61,11 @@ inoremap <expr><CR> neosnippet#expandable() ? neosnippet#mappings#expand_or_jump
 " neocomplcache
 
 " auto load buff (folding)
-au BufWinLeave * mkview
+" au BufWinLeave * mkview
+" fix error detected while processing bufwinleave auto commands for * no file
+" name
+au BufWinLeave ?* mkview 1
+au BufWinEnter ?* silent loadview 1
 
 " syntastic
 set statusline+=%#warningmsg#
@@ -107,8 +109,17 @@ let g:airline_symbols.branch = '⌥'
 
 " use powerline fonts
 let g:airline_powerline_fonts = 0
+
+" for windows gvim
 if has('gui_running')
     set guifont=DejaVu\ Sans\ Mono:h11
+endif
+" for linux gui
+if has('gui') && LINUX()
+    set guifont=DejaVu\ Sans\ Mono\ Book\ 11
+endif
+" for putty
+if !has('gui') && LINUX()
 endif
 " neosnippet neocomplete
 " add my snippets for general filetype
