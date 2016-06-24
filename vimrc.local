@@ -1,4 +1,6 @@
 autocmd FileType json,aws.json,erb setlocal expandtab shiftwidth=2 softtabstop=2
+" set filetype
+" au BufNewFile,BufRead *.template set filetype=aws.json
 " http://stackoverflow.com/questions/11404800/fix-vim-tmux-yank-paste-on-unnamed-register
 if $TMUX == ''
     set clipboard+=unnamed
@@ -127,9 +129,9 @@ if count(g:spf13_bundle_groups, 'neocomplete')
     let g:neosnippet#snippets_directory = '~/.vim/bundle/vim-snippets/snippets,~/.mysnippets'
     let g:neosnippet#scope_aliases = {}
     let g:neosnippet#scope_aliases['j2'] = 'ansible_template'
-    let g:neosnippet#scope_aliases['yml'] = 'ansible'
-    let g:neosnippet#scope_aliases['ruby'] = 'general'
-    let g:neosnippet#scope_aliases['sh'] = 'general'
+    let g:neosnippet#scope_aliases['yml'] = 'ansible,yml'
+    let g:neosnippet#scope_aliases['ruby'] = 'ruby,rails'
+    let g:neosnippet#scope_aliases['sh'] = 'sh'
 endif
 
 " ansible-vim
