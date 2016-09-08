@@ -196,6 +196,7 @@ mode-keys vi
 
 #TODO: select color
 tmux plugin management
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 https://github.com/tmux-plugins/tpm
 https://github.com/seebi/tmux-colors-solarized
 https://github.com/tmux-plugins/tmux-yank
