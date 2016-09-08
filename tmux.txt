@@ -193,3 +193,10 @@ mode-keys vi
   effective values for Y.0:
       pane-base-index 1   (global)
       mode-keys vi        (set)
+
+#TODO: select color
+tmux plugin management
+https://github.com/tmux-plugins/tpm
+https://github.com/seebi/tmux-colors-solarized
+https://github.com/tmux-plugins/tmux-yank
+https://github.com/tmux-plugins/tmux-copycat
