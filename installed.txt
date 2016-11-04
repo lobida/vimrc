@@ -1,5 +1,8 @@
+  git clone git@github.com:lobida/vimrc.git
   sudo apt-get install virtualenv
   sudo apt-get install tmux
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+  Press prefix + I (capital I, as in Install) to fetch the plugin.
   sudo apt-get install virtualenvwrapper
   sudo apt-get install vagrant
   sudo apt-get install python-dev
@@ -19,6 +22,8 @@
   sudo apt-get install vim-nox
   sudo apt-get install ubuntu-server
   sudo apt-get install virtualbox-5.0
+  curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
+  \curl -sSL https://get.rvm.io | bash -s stable
   rvm gemset create online
   rvm install 2.3
   rvm --default use ruby-2.3.0@online
@@ -26,6 +31,7 @@
   gem sources --add https://ruby.taobao.org/ --remove https://rubygems.org/
   gem install sinatra
   gem install bundle
+  gem install chef-dk
   gem install knife-solo
   gem install knife-solo_data_bag
   gem install rest-client

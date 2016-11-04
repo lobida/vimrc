@@ -19,6 +19,7 @@ set encoding=utf-8
 set fileencodings=utf-8
 set fileformat=unix
 set wrap
+set pastetoggle=<F2>
 
 " vmap for erb (helpless?)
 ":vmap sb "zdi<b><C-R>z</b><Esc> : wrap <b></b> around visually selected text
@@ -28,7 +29,7 @@ set wrap
 " source $MYVIMRC reloads the saved $MYVIMRC
 :nmap <Leader>s :source $MYVIMRC
 " fix e484 windows https://github.com/mattn/gist-vim/issues/48
-if !LINUX()
+if has('win32') || has('win64')
     set shell=cmd
     set shellcmdflag=/c
 endif
