@@ -157,3 +157,6 @@ let g:ansible_extra_keywords_highlight = 1
 " syntastic ignore some warning
 let g:syntastic_eruby_ruby_quiet_messages =
     \ {'regex': 'possibly useless use of a variable in void context'}
+    
+" NERDTreeChDirMode
+let NERDTreeChDirMode=2
