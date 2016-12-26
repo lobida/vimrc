@@ -7,6 +7,7 @@ Bundle 'MattesGroeger/vim-bookmarks'
 let g:AWSVimValidate = 1
 Bundle 'vim-ruby/vim-ruby'
 "Bundle 'vim-togglecursor'
+"Bundle 'tpope/vim-speeddating'
 "Bundle 'jceb/vim-orgmode'
 Bundle 'vitalk/vim-simple-todo'
 Bundle 'pearofducks/ansible-vim'
