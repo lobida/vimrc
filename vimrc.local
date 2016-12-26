@@ -1,4 +1,5 @@
-autocmd FileType json,aws.json,erb setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd FileType json,aws.json setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd FileType eruby,erb,html.erb setlocal expandtab shiftwidth=2 softtabstop=2
 " set filetype
 " au BufNewFile,BufRead *.template set filetype=aws.json
 " http://stackoverflow.com/questions/11404800/fix-vim-tmux-yank-paste-on-unnamed-register
