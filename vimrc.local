@@ -79,7 +79,8 @@ inoremap <expr><CR> neosnippet#expandable() ? neosnippet#mappings#expand_or_jump
 " fix error detected while processing bufwinleave auto commands for * no file
 " name
 au BufWinLeave ?* mkview 1
-au BufWinEnter ?* silent loadview 1
+" comment next line for 'error detected while processing function vundle installer run'
+" au BufWinEnter ?* silent loadview 1
 
 " syntastic
 set statusline+=%#warningmsg#
@@ -157,6 +158,6 @@ let g:ansible_extra_keywords_highlight = 1
 " syntastic ignore some warning
 let g:syntastic_eruby_ruby_quiet_messages =
     \ {'regex': 'possibly useless use of a variable in void context'}
-    
+
 " NERDTreeChDirMode
 let NERDTreeChDirMode=2
