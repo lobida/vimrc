@@ -44,3 +44,5 @@
   pip install python-novaclient
   pip install python-keystoneclient
   pip install aliyun-python-sdk-oss
+  pip install genpac
+  genpac --proxy="SOCKS5 127.0.0.1:1081" --gfwlist-proxy="SOCKS5 127.0.0.1:1081" -o autoproxy.pac --gfwlist-url="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt"

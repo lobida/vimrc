@@ -1,4 +1,5 @@
-autocmd FileType json,aws.json,erb setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd FileType json,aws.json setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd FileType eruby,erb,html.erb setlocal expandtab shiftwidth=2 softtabstop=2
 " set filetype
 " au BufNewFile,BufRead *.template set filetype=aws.json
 " http://stackoverflow.com/questions/11404800/fix-vim-tmux-yank-paste-on-unnamed-register
@@ -79,7 +80,8 @@ inoremap <expr><CR> neosnippet#expandable() ? neosnippet#mappings#expand_or_jump
 " fix error detected while processing bufwinleave auto commands for * no file
 " name
 au BufWinLeave ?* mkview 1
-au BufWinEnter ?* silent loadview 1
+" comment next line for 'error detected while processing function vundle installer run'
+" au BufWinEnter ?* silent loadview 1
 
 " syntastic
 set statusline+=%#warningmsg#
