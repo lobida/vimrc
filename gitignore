@@ -45,6 +45,6 @@ Thumbs.db
 ######################
 *.chef
 *.kitchen
-kitchen.yml
+.kitchen.yml
 chefignore
 Berksfile.lock
