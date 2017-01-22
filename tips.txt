@@ -1,0 +1,24 @@
+========== MFA ==========
+To install it on MAC, run “brew install oath-toolkit” assuming you have brew installed already.
+To use it to generate MFA code, run something like: “oathtool --totp --base32 <your_secret_key>”
+On MAC, you can go further and copy the MFA code to clipboard instead of print it on screen by pipeline it to pbcopy: “oathtool --totp --base32 <your_secret_key> | pbcopy”
+
+========== pbcopy for linux  ==========
+if you have X installed you may try xsel in this way :
+
+alias pbcopy='xsel --clipboard --input'
+alias pbpaste='xsel --clipboard --output'
+or with xclip :
+
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+now you can use'em :
+
+echo 'go to my clipboard' | pbcopy
+when I don't have X I use GNU Screen functionality to copy between open shells in a session using keyboard
+
+to copy : Ctrl-a -> Esc -> go to wanted position * -> Space (to begin selecting) -> press k to go forward mark text -> Enter
+
+to paste : Ctrl-a + ]
+
+* movements are done with vim like key bindings (j, k, l & m).
