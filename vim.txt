@@ -296,3 +296,19 @@ curl https://j.mp/spf13-vim3 -L -o - | sh
 cd $HOME/to/spf13-vim/
 git pull
 vim +BundleInstall! +BundleClean +q
+
+Markdown preview
+Installation
+
+You first need to have node.js with npm installed. Then:
+
+[sudo] npm -g install instant-markdown-d
+If you're on Linux, ensure the following packages are installed:
+xdg-utils
+curl
+nodejs-legacy (for Debian-based systems)
+If you're on Windows, you will need into install cURL and put it on your %PATH%.
+Copy the after/ftplugin/markdown/instant-markdown.vim file from this repo into your ~/.vim/after/ftplugin/markdown/ (creating directories as necessary), or follow your vim package manager's instructions.
+Ensure you have the line filetype plugin on in your .vimrc
+Open a markdown file in vim and enjoy!
+visit http://localhost:8090/

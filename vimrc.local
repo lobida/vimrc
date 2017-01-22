@@ -148,6 +148,18 @@ if count(g:spf13_bundle_groups, 'neocomplete')
     let g:neosnippet#scope_aliases['sh'] = 'sh'
 endif
 
+" add markdown plugin
+if count(g:spf13_bundle_groups, 'mymisc')
+    Bundle 'rust-lang/rust.vim'
+    Bundle 'plasticboy/vim-markdown'
+    Bundle 'suan/vim-instant-markdown'
+    Bundle 'spf13/vim-preview'
+    Bundle 'tpope/vim-cucumber'
+    Bundle 'cespare/vim-toml'
+    Bundle 'quentindecock/vim-cucumber-align-pipes'
+    Bundle 'saltstack/salt-vim'
+endif
+
 " ansible-vim
 au BufNewFile,BufRead *.ab set filetype=ansible_hosts
 au BufNewFile,BufRead ansible.cfg set filetype=ansible
