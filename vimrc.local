@@ -107,7 +107,7 @@ let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline#extensions#tabline#tab_min_count = 1
 let g:airline#extensions#tabline#show_close_button = 0
 let g:airline_detect_modified=1
-let g:airline_theme='qwq'
+let g:airline_theme='solarized'
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
