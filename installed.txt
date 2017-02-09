@@ -48,3 +48,7 @@
   pip install aliyun-python-sdk-oss
   pip install genpac
   genpac --proxy="SOCKS5 127.0.0.1:1081" --gfwlist-proxy="SOCKS5 127.0.0.1:1081" -o autoproxy.pac --gfwlist-url="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt"
+
+  BASH
+  git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
+  https://github.com/Bash-it/bash-it
