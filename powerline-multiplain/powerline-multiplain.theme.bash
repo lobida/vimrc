@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-. "$BASH_IT/themes/powerline-plain/powerline-plain.base.bash"
+. "$BASH_IT/themes/powerline-multiplain/powerline-multiplain.base.bash"
 
 PROMPT_CHAR=${POWERLINE_PROMPT_CHAR:="❯"}
 USER_INFO_SSH_CHAR=${POWERLINE_USER_INFO_SSH_CHAR:="⌁ "}
