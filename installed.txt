@@ -52,3 +52,5 @@
   BASH
   git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
   https://github.com/Bash-it/bash-it
+
+  graphviz, berks viz for chef cookbooks

@@ -1,6 +1,7 @@
 Bundle 'maxbrunsfeld/vim-emacs-bindings'
 Bundle 'm-kat/aws-vim'
 Bundle 'ngmy/vim-rubocop'
+let g:vimrubocop_config = '~/vimrc/rubocop_default.yml'
 Bundle 'chase/vim-ansible-yaml'
 Bundle 'mitsuhiko/vim-jinja'
 Bundle 'MattesGroeger/vim-bookmarks'

@@ -312,3 +312,5 @@ Copy the after/ftplugin/markdown/instant-markdown.vim file from this repo into y
 Ensure you have the line filetype plugin on in your .vimrc
 Open a markdown file in vim and enjoy!
 visit http://localhost:8090/
+
+rubocop shortcut <Leader>ru
