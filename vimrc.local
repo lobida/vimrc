@@ -1,7 +1,17 @@
+set tw=80
 set colorcolumn=81
 autocmd FileType json,aws.json setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd FileType eruby,erb,html.erb setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=4 autoindent fo=croqt
+
+" for vim-chef plugin to set ft=ruby.chef
+autocmd BufNewFile,BufRead */cookbooks/*/\(attributes\|definitions\|libraries\|providers\|recipes\|resources\)/*.rb set filetype=ruby.chef
+
+autocmd BufNewFile,BufRead */cookbooks/*/templates/*/*.erb set filetype=eruby.chef
+autocmd BufNewFile,BufRead */cookbooks/*/metadata.rb set filetype=ruby.chef
+
+autocmd BufNewFile,BufRead */chef-repo/environments/*.rb set filetype=ruby.chef
+autocmd BufNewFile,BufRead */chef-repo/roles/*.rb set filetype=ruby.chef
 " set filetype
 " au BufNewFile,BufRead *.template set filetype=aws.json
 " http://stackoverflow.com/questions/11404800/fix-vim-tmux-yank-paste-on-unnamed-register

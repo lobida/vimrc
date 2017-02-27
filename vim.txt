@@ -314,3 +314,5 @@ Open a markdown file in vim and enjoy!
 visit http://localhost:8090/
 
 rubocop shortcut <Leader>ru
+Foodcritic is a lint tool for Chef cookbooks. You probably need a plugin to set filetypes for Chef files, such as vim-chef.
+dougireton/vim-chef set ft=ruby.chef
