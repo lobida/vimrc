@@ -65,3 +65,6 @@ cd fonts
 install.sh
 
 https://github.com/riobard/bash-powerline
+https://github.com/powerline/powerline
+https://powerline.readthedocs.io/en/latest/installation.html
+Install powerline
