@@ -54,3 +54,14 @@
   https://github.com/Bash-it/bash-it
 
   graphviz, berks viz for chef cookbooks
+
+  agnoster-bash
+
+https://github.com/speedenator/agnoster-bash
+In order for this theme to render correctly, you will need a Powerline-patched font. I recommend: https://github.com/powerline/fonts.git
+
+git clone https://github.com/powerline/fonts.git fonts
+cd fonts
+install.sh
+
+https://github.com/riobard/bash-powerline
