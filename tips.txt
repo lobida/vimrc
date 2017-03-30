@@ -1,4 +1,7 @@
 ========== MFA ==========
+pbcopy in tmux issue:
+brew install reattach-to-user-namespace
+
 To install it on MAC, run “brew install oath-toolkit” assuming you have brew installed already.
 To use it to generate MFA code, run something like: “oathtool --totp --base32 <your_secret_key>”
 On MAC, you can go further and copy the MFA code to clipboard instead of print it on screen by pipeline it to pbcopy: “oathtool --totp --base32 <your_secret_key> | pbcopy”
