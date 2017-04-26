@@ -285,6 +285,18 @@ let g:bookmark_no_default_key_mappings = 1 | 0 | Prevent any default key mapping
 https://github.com/MattesGroeger/vim-bookmarks
 
 
+#################################################
+# vim-ruby
+#################################################
+# To edit start of next method definition
+]m
+# To go to end of next method definition
+]M
+# To start of previous method definition
+[m
+# To end of previous method definition
+[M
+
 Amazing Colors
 spf13-vim includes solarized and spf13 vim color pack:
 
