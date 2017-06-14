@@ -285,6 +285,49 @@ let g:bookmark_no_default_key_mappings = 1 | 0 | Prevent any default key mapping
 https://github.com/MattesGroeger/vim-bookmarks
 
 
+#################################################
+# vim-bufkill
+#################################################
+When you wish to unload a file from the buffer and keep the window/split intact:
+
+:BUN
+
+When you wish to delete a file from the buffer and keep the window/split intact:
+
+:BD
+
+When you wish to wipe a file from the buffer and keep the window/split intact:
+
+:BW
+
+Notice how the key mappings are the uppercase version of the :bun :bd :bw Vim commands? Easy!
+
+Moving through buffers
+
+To move backwards through recently accessed buffers:
+
+:BB
+
+and to move forwards:
+
+:BF
+
+To move to an alternate buffer and keep the cursor in the same column, use:
+
+:BA
+
+#################################################
+# vim-ruby
+#################################################
+# To edit start of next method definition
+]m
+# To go to end of next method definition
+]M
+# To start of previous method definition
+[m
+# To end of previous method definition
+[M
+
 Amazing Colors
 spf13-vim includes solarized and spf13 vim color pack:
 
