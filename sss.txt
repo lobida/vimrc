@@ -1,0 +1,8 @@
+GUI Client
+Shadowsocks-Qt5: GitHub
+Command-line Client
+pip install shadowsocks
+apt-get install shadowsocks-libev
+cpan Net::Shadowsocks
+
+https://github.com/shadowsocks/shadowsocks/tree/master
