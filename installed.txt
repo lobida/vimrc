@@ -68,3 +68,7 @@ https://github.com/riobard/bash-powerline
 https://github.com/powerline/powerline
 https://powerline.readthedocs.io/en/latest/installation.html
 Install powerline
+
+golang
+https://github.com/moovweb/gvm
+bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
