@@ -202,8 +202,6 @@ https://github.com/tmux-plugins/tpm
 https://github.com/seebi/tmux-colors-solarized
 https://github.com/tmux-plugins/tmux-yank
 https://github.com/tmux-plugins/tmux-copycat
-https://github.com/tmux-plugins/tmux-yank
-https://github.com/tmux-plugins/tmux-copycat
 
 ===========================================================
 Restoring pane contents
@@ -232,4 +230,63 @@ https://github.com/tpope/vim-obsession
 
 Seamless navigation between tmux panes and vim splits
 christoomey/vim-tmux-navigator
+
+++++++++++++++++++++++++++++++
+copycat
+Search
+
+    prefix + / - regex search (strings work too)
+
+Example search entries:
+
+    foo - searches for string foo
+    [0-9]+ - regex search for numbers
+
+Grep is used for searching.
+Searches are case insensitive.
+Predefined searches
+
+    prefix + ctrl-f - simple file search
+    prefix + ctrl-g - jumping over git status files (best used after git status command)
+    prefix + alt-h - jumping over SHA-1 hashes (best used after git log command)
+    prefix + ctrl-u - url search (http, ftp and git urls)
+    prefix + ctrl-d - number search (mnemonic d, as digit)
+    prefix + alt-i - ip address search
+
+These start "copycat mode" and jump to first match.
+"Copycat mode" bindings
+
+These are enabled when you search with copycat:
+
+    n - jumps to the next match
+    N - jumps to the previous match
+
+To copy a highlighted match:
+
+    Enter - if you're using Tmux vi mode
+    ctrl-w or alt-w - if you're using Tmux emacs mode
+
+Copying a highlighted match will take you "out" of copycat mode. Paste with prefix + ] (this is Tmux default paste).
+
+Copying highlighted matches can be enhanced with tmux yank.
+
++++++++++++++++++++++++++++++++
+yank
+
+
+    Normal Mode
+
+        prefix–y — copies text from the command line to the clipboard.
+
+        Works with all popular shells/repls. Tested with:
+            shells: bash, zsh (with bindkey -e), tcsh
+            repls: irb, pry, node, psql, python, php -a, coffee
+            remote shells: ssh, mosh
+            vim/neovim command line (requires vim-husk or vim-rsi plugin)
+
+        prefix–Y — copy the current pane's current working directory to the clipboard.
+
+    Copy Mode
+        y — copy selection to system clipboard.
+        Y (shift-y) — "put" selection. Equivalent to copying a selection, and pasting it to the command line.
 
