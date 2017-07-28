@@ -1,3 +1,4 @@
+colorscheme gruvbox
 set tw=80
 set colorcolumn=81
 autocmd FileType json,aws.json setlocal expandtab shiftwidth=2 softtabstop=2
