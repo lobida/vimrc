@@ -62,8 +62,10 @@ let g:ctrlp_by_filename = 0
 let g:ctrlp_regexp = 1
 " let g:ctrlp_user_command = 'find %s -type f'        " MacOSX/Linux
 " Buffer Mapping
-nnoremap <silent>[b :bprevious<CR>
-nnoremap <silent>]b :bnext<CR>
+nnoremap <leader>bw :SyntasticReset<CR>:bdelete<CR>
+nnoremap <silent>[b :BF<CR>
+nnoremap <silent>]b :BB<CR>
+nnoremap <silent>[a :BA<CR>
 nnoremap <silent>[B :bfirst<CR>
 nnoremap <silent>]B :blast<CR>
 nnoremap <silent>[1 :1b<CR>
