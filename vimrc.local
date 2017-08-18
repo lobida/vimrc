@@ -1,9 +1,8 @@
 colorscheme gruvbox
-set tw=80
-set colorcolumn=81
 autocmd FileType json,aws.json setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd FileType eruby,erb,html.erb setlocal expandtab shiftwidth=2 softtabstop=2
-autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=4 autoindent fo=croqt
+autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=4 autoindent fo=croqt colorcolumn=101
+autocmd FileType ruby setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=4 autoindent fo=croqt tw=80 colorcolumn=81
 
 " for vim-chef plugin to set ft=ruby.chef
 autocmd BufNewFile,BufRead */cookbooks/*/\(attributes\|definitions\|libraries\|providers\|recipes\|resources\)/*.rb set filetype=ruby.chef
@@ -106,6 +105,9 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" python max line length
+let g:autopep8_max_line_length=100
 
 " airline
 let g:airline#extensions#tabline#enabled = 1
