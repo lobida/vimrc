@@ -111,6 +111,9 @@ let g:autopep8_max_line_length=100
 
 " Pylint configuration file
 let g:pymode_lint_config = '$HOME/.pylint.rc'
+let g:pymode_options_max_line_length=100
+let g:pymode_lint_options_pep8 =
+\ {'max_line_length': g:pymode_options_max_line_length}
 
 " airline
 let g:airline#extensions#tabline#enabled = 1
