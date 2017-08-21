@@ -109,6 +109,9 @@ let g:syntastic_check_on_wq = 0
 " python max line length
 let g:autopep8_max_line_length=100
 
+" Pylint configuration file
+let g:pymode_lint_config = '$HOME/.pylint.rc'
+
 " airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 0
