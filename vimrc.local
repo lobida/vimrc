@@ -106,21 +106,19 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-" python max line length
-let g:autopep8_max_line_length=100
 
-" Pylint configuration file
-let g:pymode_lint_config = '$HOME/.pylint.rc'
-let g:pymode_options_max_line_length=100
-let g:pymode_lint_options_pep8 =
-            \ {'max_line_length': g:pymode_options_max_line_length}
+if has('linux')
+    " python max line length
+    let g:autopep8_max_line_length=100
+
+    " Pylint configuration file
+    let g:pymode_lint_config = '$HOME/.pylint.rc'
+    let g:pymode_options_max_line_length=100
+    let g:pymode_lint_options_pep8 =
+                \ {'max_line_length': g:pymode_options_max_line_length}
+endif
 
 if has('mac')
-    let g:pymode_rope=0
-    let g:pymode_rope_lookup_project = 0
-    let g:pymode_rope_autoimport = 0
-    let g:pymode_rope_regenerate_on_write = 0
-    let g:pymode_rope_complete_on_dot = 0
 endif
 
 " airline
