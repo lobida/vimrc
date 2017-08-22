@@ -10,5 +10,6 @@ alias py3env='workon py3env'
 alias rvmreset='rvm reset && rvm use default'
 alias rvmdefault='rvm use default'
 alias gvmdefault='gvm use go1.8'
+alias gopath="cd $GOPATH"
 # Load completion files
 # [[ -L "$HOME/.bash_completion.d"  ]] && for file in $(ls -1 "$HOME/.bash_completion.d/"); do source "$HOME/.bash_completion.d/$file"; done
