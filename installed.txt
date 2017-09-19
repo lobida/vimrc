@@ -73,3 +73,4 @@ Install powerline
 golang
 https://github.com/moovweb/gvm
 bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+/home/jaywang/.config/flake8 -> /home/jaywang/vimrc/flake8
