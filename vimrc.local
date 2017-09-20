@@ -151,7 +151,7 @@ let g:airline_powerline_fonts = 0
 
 " for windows gvim
 if has('gui_running')
-    set guifont=DejaVu\ Sans\ Mono:h11
+    set guifont=DejaVu\ Sans\ Mono:h14
 endif
 " for linux gui
 if has('gui') && LINUX()
