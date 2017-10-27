@@ -1,4 +1,5 @@
 colorscheme gruvbox
+set colorcolumn=101
 autocmd FileType json,aws.json setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd FileType eruby,erb,html.erb setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=4 autoindent fo=croqt colorcolumn=101
@@ -106,13 +107,17 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+let g:syntastic_python_checkers = ['flake8', 'pylint']
+let g:syntastic_python_pylint_args='-d C0103,C0111,R0201'
+let g:syntastic_python_flake8_args='--ignore=F821,E302,E501'
 
 " python max line length
-let g:autopep8_max_line_length=100
+let g:autopep8_max_line_length=120
 
 " Pylint configuration file
+let g:pymode_options_colorcolumn = 0
 let g:pymode_lint_config = '$HOME/.pylint.rc'
-let g:pymode_options_max_line_length=100
+let g:pymode_options_max_line_length=120
 let g:pymode_lint_options_pep8 =
             \ {'max_line_length': g:pymode_options_max_line_length}
 
