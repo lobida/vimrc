@@ -1,76 +1,82 @@
-  git clone git@github.com:lobida/vimrc.git
-  sudo apt-get install virtualenv
-  sudo apt-get install tmux
-  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-  Press prefix + I (capital I, as in Install) to fetch the plugin.
-  sudo apt-get install virtualenvwrapper
-  sudo apt-get install vagrant
-  sudo apt-get install python-dev
-  sudo apt-get install exuberant-ctags
-  sudo apt-get install virtualenvwrapper
-  sudo apt-get install cifs-utils
-  sudo apt-get install network-manager-openconnect-gnome
-  sudo apt-get install oathtool xclip
-  sudo apt-get install xsel
-  sudo apt-get install apt-transport-https ca-certificates
-  sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
-  /etc/apt/sources.list.d/docker.list
-  deb https://apt.dockerproject.org/repo ubuntu-xenial main
-  /etc/apt/sources.list.d/virtualbox.list
-  deb http://download.virtualbox.org/virtualbox/debian xenial contrib
-  sudo apt-get update
-  sudo apt-get purge lxc-docker
-  sudo apt-get upgrade
-  sudo apt-get install docker-engine
-  sudo apt-get install vim-nox
-  sudo apt-get install ubuntu-server
-  sudo apt-get install virtualbox-5.0
-  curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
-  \curl -sSL https://get.rvm.io | bash -s stable
-  rvm gemset create online
-  rvm install 2.3
-  rvm --default use ruby-2.3.0@online
-  rvm docs generate-ri
-  gem sources --add https://ruby.taobao.org/ --remove https://rubygems.org/
-  gem install sinatra
-  gem install bundle
-  gem install chef-dk
-  gem install knife-solo
-  gem install knife-solo_data_bag
-  gem install rest-client
-  mkvirtualenv online
-  edit virtualenvs/postactivate
-  complete -C '/home/jaywang/.virtualenvs/online/bin/aws_completer' aws
-  pip install awscli
-  pip install python-heatclient
-  pip install aliyuncli
-  pip install python-novaclient
-  pip install python-keystoneclient
-  pip install aliyun-python-sdk-oss
-  pip install genpac
-  genpac --proxy="SOCKS5 127.0.0.1:1081" --gfwlist-proxy="SOCKS5 127.0.0.1:1081" -o autoproxy.pac --gfwlist-url="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt"
+## VirtualBox
+echo 'deb http://download.virtualbox.org/virtualbox/debian xenial contrib' | sudo tee /etc/apt/sources.list.d/virtualbox.list
+sudo apt-key add oracle_vbox_2016.asc
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install virtualbox-5.2
+## VirtualBox
+## Docker-CE
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+sudo apt-get update
+sudo apt-get install docker-ce
+## Docker-CE
+## Python alternate
+update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
+update-alternatives --install /usr/bin/python python /usr/bin/python3.5 2
+## Python alternate
 
-  BASH
-  git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
-  https://github.com/Bash-it/bash-it
+## spf13
+curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
+## spf13
 
-  graphviz, berks viz for chef cookbooks
+## rvm
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+\curl -sSL https://get.rvm.io | bash -s stable
+rvm list known
+rvm install 2.4
+rvm docs generate-ri
+rvm gemset create online
+rvm use --default ruby-2.4@online
+gem sources --add https://ruby.taobao.org/ --remove https://rubygems.org/
+gem install chef-dk
+gem install bundle
+# change terminal to login shell
+# graphviz, berks viz for chef cookbooks
+## rvm
 
-  agnoster-bash
 
-https://github.com/speedenator/agnoster-bash
-In order for this theme to render correctly, you will need a Powerline-patched font. I recommend: https://github.com/powerline/fonts.git
+## system packages
+sudo apt-get install virtualenv tmux network-manager-openconnect-gnome cifs-utils vim-nox oathtool exuberant-ctags
+xclpi vim-nox git-flow
+git clone git@github.com:lobida/vimrc.git
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+ln -s vimrc/tmux.conf .tmux.conf
+# Press prefix + I (capital I, as in Install) to fetch the plugin.
+ln -s vimrc/vimrc.before.local .vimrc.before.local
+ln -s vimrc/vimrc.bundles.local .vimrc.bundles.local
+ln -s vimrc/vimrc.local .vimrc.local
+# vim BundleInstall
+## system packages
 
+## bashit
+git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
+~/.bash_it/install.sh
+bashit enable completion docker git tmux rvm git_flow aws
+## bashit
+
+## Powerline-patched font
 git clone https://github.com/powerline/fonts.git fonts
 cd fonts
 install.sh
+## Powerline-patched font
 
 https://github.com/riobard/bash-powerline
 https://github.com/powerline/powerline
 https://powerline.readthedocs.io/en/latest/installation.html
 Install powerline
 
+## golang
 golang
 https://github.com/moovweb/gvm
 bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
-/home/jaywang/.config/flake8 -> /home/jaywang/vimrc/flake8
+## golang
