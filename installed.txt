@@ -1,38 +1,49 @@
+## shadowsocks
+sudo add-apt-repository ppa:hzwhuang/ss-qt5
+sudo apt-get update
+sudo apt-get install shadowsocks-qt5
+## shadowsocks
+
 ## VirtualBox
 echo 'deb http://download.virtualbox.org/virtualbox/debian xenial contrib' | sudo tee /etc/apt/sources.list.d/virtualbox.list
-sudo apt-key add oracle_vbox_2016.asc
 wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
 sudo apt-get update
 sudo apt-get install virtualbox-5.2
 ## VirtualBox
+
 ## Docker-CE
-sudo apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    software-properties-common
+sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
-   stable"
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial stable"
 sudo apt-get update
 sudo apt-get install docker-ce
 ## Docker-CE
+
 ## Python alternate
 update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
 update-alternatives --install /usr/bin/python python /usr/bin/python3.5 2
 ## Python alternate
 
+## python venv
+sudo apt-get install virtualenvwrapper python-pip python-setuptools python3-pip python3-setuptools
+source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+mkvirtualenv py3
+workon py3
+## python venv
+
 ## spf13
 curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
+ln -s vimrc/vimrc.before.local .vimrc.before.local
+ln -s vimrc/vimrc.bundles.local .vimrc.bundles.local
+ln -s vimrc/vimrc.local .vimrc.local
+# vim BundleInstall
 ## spf13
 
 ## rvm
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 \curl -sSL https://get.rvm.io | bash -s stable
-rvm list known
 rvm install 2.4
 rvm docs generate-ri
 rvm gemset create online
@@ -44,18 +55,13 @@ gem install bundle
 # graphviz, berks viz for chef cookbooks
 ## rvm
 
-
 ## system packages
 sudo apt-get install virtualenv tmux network-manager-openconnect-gnome cifs-utils vim-nox oathtool exuberant-ctags
-xclpi vim-nox git-flow
+xclip vim-nox git-flow
 git clone git@github.com:lobida/vimrc.git
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ln -s vimrc/tmux.conf .tmux.conf
 # Press prefix + I (capital I, as in Install) to fetch the plugin.
-ln -s vimrc/vimrc.before.local .vimrc.before.local
-ln -s vimrc/vimrc.bundles.local .vimrc.bundles.local
-ln -s vimrc/vimrc.local .vimrc.local
-# vim BundleInstall
 ## system packages
 
 ## bashit
@@ -80,3 +86,11 @@ golang
 https://github.com/moovweb/gvm
 bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
 ## golang
+
+## github
+git config --global user.email 'jaywanglevelup@yahoo.com'
+git config --global user.name 'lobida'
+## github
+
+## firefox
+gfwlist-url="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt"
