@@ -108,4 +108,11 @@ sudo apt-key add Release.key
 sudo apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/
 sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ xenial main'
 
-# cisco anyconnection
+# NetworkManager
+sudo su -
+vim /etc/NetworkManager/NetworkManager.conf
+remove DNS=dnsmasq line
+systemctl restart NetworkManager
+
+# ssh_config
+MACs hmac-sha1
