@@ -119,3 +119,6 @@ systemctl restart NetworkManager
 
 # ssh_config
 MACs hmac-sha1
+
+# evernote nixnote2
+https://github.com/baumgarr/nixnote2
