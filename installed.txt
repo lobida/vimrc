@@ -1,3 +1,6 @@
+## git
+ln -s vimrc/gitconfig .gitconfig
+
 ## shadowsocks
 sudo add-apt-repository ppa:hzwhuang/ss-qt5
 sudo apt-get update
@@ -85,9 +88,13 @@ https://powerline.readthedocs.io/en/latest/installation.html
 Install powerline
 
 ## golang
-golang
-https://github.com/moovweb/gvm
-bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+sudo apt-get install golang
+https://github.com/Masterminds/glide
+sudo add-apt-repository ppa:masterminds/glide && sudo apt-get update
+sudo apt-get install glide
+# export GOPATH=/home/jay/projects/go_projects
+# mkdir $GOPATH/bin
+# curl https://glide.sh/get | sh
 ## golang
 
 ## github
