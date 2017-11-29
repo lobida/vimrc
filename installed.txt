@@ -111,6 +111,7 @@ goldendict
 remmina
 dropbox
 
+franz
 ## wine
 sudo dpkg --add-architecture i386 
 wget -nc https://dl.winehq.org/wine-builds/Release.key
@@ -129,3 +130,7 @@ MACs hmac-sha1
 
 # evernote nixnote2
 https://github.com/baumgarr/nixnote2
+
+# terminal colortheme
+https://github.com/Mayccoll/Gogh
+sudo apt-get install dconf-cli
