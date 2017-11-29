@@ -70,6 +70,10 @@ ln -s vimrc/tmux.conf .tmux.conf
 # Press prefix + I (capital I, as in Install) to fetch the plugin.
 ## system packages
 
+## terminal
+run login shell; run command tmux
+## terminal
+
 ## bashit
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
 ~/.bash_it/install.sh
