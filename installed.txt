@@ -138,3 +138,13 @@ https://github.com/baumgarr/nixnote2
 # terminal colortheme
 https://github.com/Mayccoll/Gogh
 sudo apt-get install dconf-cli
+
+# keyboard shortcut
+http://xahlee.info/linux/linux_keyboard_tools.html
+https://help.ubuntu.com/community/KeyboardShortcuts#Text_Entry_Shortcuts
+sudo apt-get install xbindkeys
+sudo apt-get install xbindkeys-config 
+sudo apt-get install xvkbd 
+
+ln -s ~/vimrc/xbindkeysrc ~/.xbindkeysrc
+
