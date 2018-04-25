@@ -25,3 +25,6 @@ to copy : Ctrl-a -> Esc -> go to wanted position * -> Space (to begin selecting)
 to paste : Ctrl-a + ]
 
 * movements are done with vim like key bindings (j, k, l & m).
+
+# patched fonts
+https://nerdfonts.com/
