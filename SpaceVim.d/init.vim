@@ -8,8 +8,11 @@
 
 
 " SpaceVim Options: {{{
-let g:python2_host_prog = '/usr/local/bin/python'
-let g:python3_host_prog = '/usr/local/bin/python3'
+set scrolloff=3
+set ignorecase
+set smartcase
+let g:python2_host_prog = '/home/jay/.py2/bin/python'
+let g:python3_host_prog = '/home/jay/.py3/bin/python3'
 let g:spacevim_enable_debug = 1
 let g:spacevim_realtime_leader_guide = 1
 let g:spacevim_enable_tabline_filetype_icon = 1
@@ -18,6 +21,9 @@ let g:spacevim_enable_os_fileformat_icon = 1
 let g:spacevim_buffer_index_type = 1
 let g:spacevim_enable_vimfiler_welcome = 1
 let g:spacevim_enable_debug = 1
+let g:spacevim_guifont = 'DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 11'
+let g:spacevim_colorscheme = 'gruvbox'
+let g:spacevim_colorscheme_bg = 'dark'
 " }}}
 
 " SpaceVim Layers: {{{
@@ -34,9 +40,6 @@ call SpaceVim#layers#load('git')
 call SpaceVim#layers#load('lang#vim')
 call SpaceVim#layers#load('checkers', {
     \ 'show_cursor_error' : 0,
-    \ })
-call SpaceVim#layers#load('colorscheme', {
-    \ 'random-theme' : 1,
     \ })
 call SpaceVim#layers#load('tags')
 " }}}
