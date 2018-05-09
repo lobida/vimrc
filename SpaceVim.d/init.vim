@@ -26,6 +26,12 @@ let g:spacevim_colorscheme = 'gruvbox'
 let g:spacevim_colorscheme_bg = 'dark'
 " }}}
 
+" SpaceVim Custom Plugins: {{{
+let g:spacevim_custom_plugins = [
+            \ ['maxbrunsfeld/vim-emacs-bindings', {'merged' : 0}],
+            \ ]
+" }}}
+
 " SpaceVim Layers: {{{
 SPLayer 'lang#python'
 SPLayer 'lang#ruby'
@@ -37,16 +43,20 @@ call SpaceVim#layers#load('autocomplete', {
     \ })
 call SpaceVim#layers#load('lang#go')
 call SpaceVim#layers#load('git')
+call SpaceVim#layers#load('VersionControl')
 call SpaceVim#layers#load('lang#vim')
 call SpaceVim#layers#load('checkers', {
     \ 'show_cursor_error' : 0,
     \ })
 call SpaceVim#layers#load('tags')
+call SpaceVim#layers#load('fzf')
+call SpaceVim#layers#load('cscope')
 " }}}
 
+" Don't use sudo run vim
 " SpaceVim disable the annoying `indentLine` plugin. #589
-let g:indentLine_conceallevel = 0
-let g:indentLine_concealcursor = 'nc'
-let g:indentLine_setConceal = 0
-let g:indentLine_enabled = 0
-let g:indentLine_setColors = 0
+" let g:indentLine_conceallevel = 0
+" let g:indentLine_concealcursor = 'nc'
+" let g:indentLine_setConceal = 0
+" let g:indentLine_enabled = 0
+" let g:indentLine_setColors = 0
