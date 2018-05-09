@@ -11,8 +11,9 @@
 set scrolloff=3
 set ignorecase
 set smartcase
-let g:python2_host_prog = '/home/jay/.py2/bin/python'
-let g:python3_host_prog = '/home/jay/.py3/bin/python3'
+set clipboard+=unnamedplus
+let g:python2_host_prog = $HOME.'/.py2/bin/python'
+let g:python3_host_prog = $HOME.'/.py3/bin/python3'
 let g:spacevim_enable_debug = 1
 let g:spacevim_realtime_leader_guide = 1
 let g:spacevim_enable_tabline_filetype_icon = 1
