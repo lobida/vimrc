@@ -30,6 +30,7 @@ let g:spacevim_colorscheme_bg = 'dark'
 " SpaceVim Custom Plugins: {{{
 let g:spacevim_custom_plugins = [
             \ ['maxbrunsfeld/vim-emacs-bindings', {'merged' : 0}],
+            \ ['rafi/awesome-vim-colorschemes', {'merged' : 0}],
             \ ]
 " }}}
 
