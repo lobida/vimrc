@@ -25,16 +25,22 @@ let g:spacevim_enable_debug = 1
 let g:spacevim_guifont = 'DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 11'
 let g:spacevim_colorscheme = 'gruvbox'
 let g:spacevim_colorscheme_bg = 'dark'
+" Bookmarks per working directory
+let g:bookmark_save_per_working_dir = 1
+let g:bookmark_auto_save = 1
 " }}}
 
 " SpaceVim Custom Plugins: {{{
 let g:spacevim_custom_plugins = [
             \ ['maxbrunsfeld/vim-emacs-bindings', {'merged' : 0}],
             \ ['rafi/awesome-vim-colorschemes', {'merged' : 0}],
+            \ ['MattesGroeger/vim-bookmarks', {'merged' : 0}],
             \ ]
 " }}}
 
 " SpaceVim Layers: {{{
+SPLayer 'debug'
+SPLayer 'default'
 SPLayer 'lang#python'
 SPLayer 'lang#ruby'
 call SpaceVim#layers#load('autocomplete', {
