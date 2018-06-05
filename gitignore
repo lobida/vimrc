@@ -144,3 +144,7 @@ ENV/
 
 # vim
 .vim-bookmarks
+.withtags
+
+# ansible
+secrets.yml

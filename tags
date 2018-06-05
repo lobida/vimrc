@@ -1,0 +1,260 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CheckEnabledDirs	SpaceVim.d/init.vim	/^function! CheckEnabledDirs(file)$/;"	f
+___docker_compose_all_services_in_compose_file	bash_completion.d/docker-compose.completion.bash	/^___docker_compose_all_services_in_compose_file() {$/;"	f
+___docker_compose_services_with_key	bash_completion.d/docker-compose.completion.bash	/^___docker_compose_services_with_key() {$/;"	f
+__bobby_clock	bobby-all/bobby-all.theme.bash	/^__bobby_clock() {$/;"	f
+__bundle	bash_completion.d/bundler.completion.bash	/^__bundle() {$/;"	f
+__bundle_get_command	bash_completion.d/bundler.completion.bash	/^__bundle_get_command() {$/;"	f
+__docker_append_to_completions	bash_completion.d/docker.completion.bash	/^__docker_append_to_completions() {$/;"	f
+__docker_complete_capabilities	bash_completion.d/docker.completion.bash	/^__docker_complete_capabilities() {$/;"	f
+__docker_complete_container_ids	bash_completion.d/docker.completion.bash	/^__docker_complete_container_ids() {$/;"	f
+__docker_complete_container_names	bash_completion.d/docker.completion.bash	/^__docker_complete_container_names() {$/;"	f
+__docker_complete_containers_all	bash_completion.d/docker.completion.bash	/^__docker_complete_containers_all() {$/;"	f
+__docker_complete_containers_and_images	bash_completion.d/docker.completion.bash	/^__docker_complete_containers_and_images() {$/;"	f
+__docker_complete_containers_in_network	bash_completion.d/docker.completion.bash	/^__docker_complete_containers_in_network() {$/;"	f
+__docker_complete_containers_pauseable	bash_completion.d/docker.completion.bash	/^__docker_complete_containers_pauseable() {$/;"	f
+__docker_complete_containers_running	bash_completion.d/docker.completion.bash	/^__docker_complete_containers_running() {$/;"	f
+__docker_complete_containers_stopped	bash_completion.d/docker.completion.bash	/^__docker_complete_containers_stopped() {$/;"	f
+__docker_complete_containers_unpauseable	bash_completion.d/docker.completion.bash	/^__docker_complete_containers_unpauseable() {$/;"	f
+__docker_complete_image_repos	bash_completion.d/docker.completion.bash	/^__docker_complete_image_repos() {$/;"	f
+__docker_complete_image_repos_and_tags	bash_completion.d/docker.completion.bash	/^__docker_complete_image_repos_and_tags() {$/;"	f
+__docker_complete_images	bash_completion.d/docker.completion.bash	/^__docker_complete_images() {$/;"	f
+__docker_complete_isolation	bash_completion.d/docker.completion.bash	/^__docker_complete_isolation() {$/;"	f
+__docker_complete_log_driver_options	bash_completion.d/docker.completion.bash	/^__docker_complete_log_driver_options() {$/;"	f
+__docker_complete_log_drivers	bash_completion.d/docker.completion.bash	/^__docker_complete_log_drivers() {$/;"	f
+__docker_complete_log_levels	bash_completion.d/docker.completion.bash	/^__docker_complete_log_levels() {$/;"	f
+__docker_complete_log_options	bash_completion.d/docker.completion.bash	/^__docker_complete_log_options() {$/;"	f
+__docker_complete_network_ids	bash_completion.d/docker.completion.bash	/^__docker_complete_network_ids() {$/;"	f
+__docker_complete_network_names	bash_completion.d/docker.completion.bash	/^__docker_complete_network_names() {$/;"	f
+__docker_complete_networks	bash_completion.d/docker.completion.bash	/^__docker_complete_networks() {$/;"	f
+__docker_complete_nodes	bash_completion.d/docker.completion.bash	/^__docker_complete_nodes() {$/;"	f
+__docker_complete_nodes_plus_self	bash_completion.d/docker.completion.bash	/^__docker_complete_nodes_plus_self() {$/;"	f
+__docker_complete_plugins	bash_completion.d/docker.completion.bash	/^__docker_complete_plugins() {$/;"	f
+__docker_complete_resolved_hostname	bash_completion.d/docker.completion.bash	/^__docker_complete_resolved_hostname() {$/;"	f
+__docker_complete_restart	bash_completion.d/docker.completion.bash	/^__docker_complete_restart() {$/;"	f
+__docker_complete_runtimes	bash_completion.d/docker.completion.bash	/^__docker_complete_runtimes() {$/;"	f
+__docker_complete_services	bash_completion.d/docker.completion.bash	/^__docker_complete_services() {$/;"	f
+__docker_complete_signals	bash_completion.d/docker.completion.bash	/^__docker_complete_signals() {$/;"	f
+__docker_complete_user_group	bash_completion.d/docker.completion.bash	/^__docker_complete_user_group() {$/;"	f
+__docker_complete_volumes	bash_completion.d/docker.completion.bash	/^__docker_complete_volumes() {$/;"	f
+__docker_compose_nospace	bash_completion.d/docker-compose.completion.bash	/^__docker_compose_nospace() {$/;"	f
+__docker_compose_q	bash_completion.d/docker-compose.completion.bash	/^__docker_compose_q() {$/;"	f
+__docker_compose_services_all	bash_completion.d/docker-compose.completion.bash	/^__docker_compose_services_all() {$/;"	f
+__docker_compose_services_from_build	bash_completion.d/docker-compose.completion.bash	/^__docker_compose_services_from_build() {$/;"	f
+__docker_compose_services_from_image	bash_completion.d/docker-compose.completion.bash	/^__docker_compose_services_from_image() {$/;"	f
+__docker_compose_services_paused	bash_completion.d/docker-compose.completion.bash	/^__docker_compose_services_paused() {$/;"	f
+__docker_compose_services_running	bash_completion.d/docker-compose.completion.bash	/^__docker_compose_services_running() {$/;"	f
+__docker_compose_services_stopped	bash_completion.d/docker-compose.completion.bash	/^__docker_compose_services_stopped() {$/;"	f
+__docker_compose_services_with	bash_completion.d/docker-compose.completion.bash	/^__docker_compose_services_with() {$/;"	f
+__docker_compose_to_alternatives	bash_completion.d/docker-compose.completion.bash	/^__docker_compose_to_alternatives() {$/;"	f
+__docker_compose_to_extglob	bash_completion.d/docker-compose.completion.bash	/^__docker_compose_to_extglob() {$/;"	f
+__docker_map_key_of_current_option	bash_completion.d/docker.completion.bash	/^__docker_map_key_of_current_option() {$/;"	f
+__docker_networks	bash_completion.d/docker.completion.bash	/^__docker_networks() {$/;"	f
+__docker_nodes	bash_completion.d/docker.completion.bash	/^__docker_nodes() {$/;"	f
+__docker_nospace	bash_completion.d/docker.completion.bash	/^__docker_nospace() {$/;"	f
+__docker_plugins	bash_completion.d/docker.completion.bash	/^__docker_plugins() {$/;"	f
+__docker_pos_first_nonflag	bash_completion.d/docker.completion.bash	/^__docker_pos_first_nonflag() {$/;"	f
+__docker_q	bash_completion.d/docker.completion.bash	/^__docker_q() {$/;"	f
+__docker_runtimes	bash_completion.d/docker.completion.bash	/^__docker_runtimes() {$/;"	f
+__docker_services	bash_completion.d/docker.completion.bash	/^__docker_services() {$/;"	f
+__docker_subcommands	bash_completion.d/docker.completion.bash	/^__docker_subcommands() {$/;"	f
+__docker_to_alternatives	bash_completion.d/docker.completion.bash	/^__docker_to_alternatives() {$/;"	f
+__docker_to_extglob	bash_completion.d/docker.completion.bash	/^__docker_to_extglob() {$/;"	f
+__docker_value_of_option	bash_completion.d/docker.completion.bash	/^__docker_value_of_option() {$/;"	f
+__git_flow_feature	bash_completion.d/git-flow-completion.bash	/^__git_flow_feature ()$/;"	f
+__git_flow_hotfix	bash_completion.d/git-flow-completion.bash	/^__git_flow_hotfix ()$/;"	f
+__git_flow_init	bash_completion.d/git-flow-completion.bash	/^__git_flow_init ()$/;"	f
+__git_flow_list_branches	bash_completion.d/git-flow-completion.bash	/^__git_flow_list_branches ()$/;"	f
+__git_flow_list_remote_branches	bash_completion.d/git-flow-completion.bash	/^__git_flow_list_remote_branches ()$/;"	f
+__git_flow_prefix	bash_completion.d/git-flow-completion.bash	/^__git_flow_prefix ()$/;"	f
+__git_flow_release	bash_completion.d/git-flow-completion.bash	/^__git_flow_release ()$/;"	f
+__git_flow_support	bash_completion.d/git-flow-completion.bash	/^__git_flow_support ()$/;"	f
+__kitchen_instance_list	bash_completion.d/test_kitchen.completion.bash	/^__kitchen_instance_list () {$/;"	f
+__kitchen_options	bash_completion.d/test_kitchen.completion.bash	/^__kitchen_options () {$/;"	f
+__powerline_left_segment	powerline-multiplain/powerline-multiplain.base.bash	/^function __powerline_left_segment {$/;"	f
+__powerline_prompt_command	powerline-multiplain/powerline-multiplain.base.bash	/^function __powerline_prompt_command {$/;"	f
+__pwdln	bash_completion.d/vagrant.completion.bash	/^__pwdln() {$/;"	f
+__vagrantinvestigate	bash_completion.d/vagrant.completion.bash	/^__vagrantinvestigate() {$/;"	f
+__vboxmanage_controlvm	bash_completion.d/virtualbox.completion.bash	/^__vboxmanage_controlvm() {$/;"	f
+__vboxmanage_default	bash_completion.d/virtualbox.completion.bash	/^__vboxmanage_default() {$/;"	f
+__vboxmanage_list	bash_completion.d/virtualbox.completion.bash	/^__vboxmanage_list() {$/;"	f
+__vboxmanage_list_runningvms	bash_completion.d/virtualbox.completion.bash	/^__vboxmanage_list_runningvms() {$/;"	f
+__vboxmanage_list_vms	bash_completion.d/virtualbox.completion.bash	/^__vboxmanage_list_vms() {$/;"	f
+__vboxmanage_startvm	bash_completion.d/virtualbox.completion.bash	/^__vboxmanage_startvm() {$/;"	f
+_django_completion	bash_completion.d/django.completion.bash	/^_django_completion()$/;"	f
+_docker	bash_completion.d/docker.completion.bash	/^_docker() {$/;"	f
+_docker_attach	bash_completion.d/docker.completion.bash	/^_docker_attach() {$/;"	f
+_docker_build	bash_completion.d/docker.completion.bash	/^_docker_build() {$/;"	f
+_docker_commit	bash_completion.d/docker.completion.bash	/^_docker_commit() {$/;"	f
+_docker_compose	bash_completion.d/docker-compose.completion.bash	/^_docker_compose() {$/;"	f
+_docker_compose_build	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_build() {$/;"	f
+_docker_compose_bundle	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_bundle() {$/;"	f
+_docker_compose_config	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_config() {$/;"	f
+_docker_compose_create	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_create() {$/;"	f
+_docker_compose_docker_compose	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_docker_compose() {$/;"	f
+_docker_compose_down	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_down() {$/;"	f
+_docker_compose_events	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_events() {$/;"	f
+_docker_compose_exec	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_exec() {$/;"	f
+_docker_compose_help	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_help() {$/;"	f
+_docker_compose_kill	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_kill() {$/;"	f
+_docker_compose_logs	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_logs() {$/;"	f
+_docker_compose_pause	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_pause() {$/;"	f
+_docker_compose_port	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_port() {$/;"	f
+_docker_compose_ps	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_ps() {$/;"	f
+_docker_compose_pull	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_pull() {$/;"	f
+_docker_compose_push	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_push() {$/;"	f
+_docker_compose_restart	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_restart() {$/;"	f
+_docker_compose_rm	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_rm() {$/;"	f
+_docker_compose_run	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_run() {$/;"	f
+_docker_compose_scale	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_scale() {$/;"	f
+_docker_compose_start	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_start() {$/;"	f
+_docker_compose_stop	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_stop() {$/;"	f
+_docker_compose_unpause	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_unpause() {$/;"	f
+_docker_compose_up	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_up() {$/;"	f
+_docker_compose_version	bash_completion.d/docker-compose.completion.bash	/^_docker_compose_version() {$/;"	f
+_docker_cp	bash_completion.d/docker.completion.bash	/^_docker_cp() {$/;"	f
+_docker_create	bash_completion.d/docker.completion.bash	/^_docker_create() {$/;"	f
+_docker_daemon	bash_completion.d/docker.completion.bash	/^_docker_daemon() {$/;"	f
+_docker_diff	bash_completion.d/docker.completion.bash	/^_docker_diff() {$/;"	f
+_docker_docker	bash_completion.d/docker.completion.bash	/^_docker_docker() {$/;"	f
+_docker_events	bash_completion.d/docker.completion.bash	/^_docker_events() {$/;"	f
+_docker_exec	bash_completion.d/docker.completion.bash	/^_docker_exec() {$/;"	f
+_docker_export	bash_completion.d/docker.completion.bash	/^_docker_export() {$/;"	f
+_docker_help	bash_completion.d/docker.completion.bash	/^_docker_help() {$/;"	f
+_docker_history	bash_completion.d/docker.completion.bash	/^_docker_history() {$/;"	f
+_docker_images	bash_completion.d/docker.completion.bash	/^_docker_images() {$/;"	f
+_docker_import	bash_completion.d/docker.completion.bash	/^_docker_import() {$/;"	f
+_docker_info	bash_completion.d/docker.completion.bash	/^_docker_info() {$/;"	f
+_docker_inspect	bash_completion.d/docker.completion.bash	/^_docker_inspect() {$/;"	f
+_docker_kill	bash_completion.d/docker.completion.bash	/^_docker_kill() {$/;"	f
+_docker_load	bash_completion.d/docker.completion.bash	/^_docker_load() {$/;"	f
+_docker_login	bash_completion.d/docker.completion.bash	/^_docker_login() {$/;"	f
+_docker_logout	bash_completion.d/docker.completion.bash	/^_docker_logout() {$/;"	f
+_docker_logs	bash_completion.d/docker.completion.bash	/^_docker_logs() {$/;"	f
+_docker_machine	bash_completion.d/docker-machine.completion.bash	/^_docker_machine() {$/;"	f
+_docker_machine_active	bash_completion.d/docker-machine.completion.bash	/^_docker_machine_active() {$/;"	f
+_docker_machine_config	bash_completion.d/docker-machine.completion.bash	/^_docker_machine_config() {$/;"	f
+_docker_machine_create	bash_completion.d/docker-machine.completion.bash	/^_docker_machine_create() {$/;"	f
+_docker_machine_docker_machine	bash_completion.d/docker-machine.completion.bash	/^_docker_machine_docker_machine() {$/;"	f
+_docker_machine_env	bash_completion.d/docker-machine.completion.bash	/^_docker_machine_env() {$/;"	f
+_docker_machine_help	bash_completion.d/docker-machine.completion.bash	/^_docker_machine_help() {$/;"	f
+_docker_machine_inspect	bash_completion.d/docker-machine.completion.bash	/^_docker_machine_inspect() {$/;"	f
+_docker_machine_ip	bash_completion.d/docker-machine.completion.bash	/^_docker_machine_ip() {$/;"	f
+_docker_machine_kill	bash_completion.d/docker-machine.completion.bash	/^_docker_machine_kill() {$/;"	f
+_docker_machine_ls	bash_completion.d/docker-machine.completion.bash	/^_docker_machine_ls() {$/;"	f
+_docker_machine_regenerate_certs	bash_completion.d/docker-machine.completion.bash	/^_docker_machine_regenerate_certs() {$/;"	f
+_docker_machine_restart	bash_completion.d/docker-machine.completion.bash	/^_docker_machine_restart() {$/;"	f
+_docker_machine_rm	bash_completion.d/docker-machine.completion.bash	/^_docker_machine_rm() {$/;"	f
+_docker_machine_scp	bash_completion.d/docker-machine.completion.bash	/^_docker_machine_scp() {$/;"	f
+_docker_machine_ssh	bash_completion.d/docker-machine.completion.bash	/^_docker_machine_ssh() {$/;"	f
+_docker_machine_start	bash_completion.d/docker-machine.completion.bash	/^_docker_machine_start() {$/;"	f
+_docker_machine_status	bash_completion.d/docker-machine.completion.bash	/^_docker_machine_status() {$/;"	f
+_docker_machine_stop	bash_completion.d/docker-machine.completion.bash	/^_docker_machine_stop() {$/;"	f
+_docker_machine_upgrade	bash_completion.d/docker-machine.completion.bash	/^_docker_machine_upgrade() {$/;"	f
+_docker_machine_url	bash_completion.d/docker-machine.completion.bash	/^_docker_machine_url() {$/;"	f
+_docker_machine_use	bash_completion.d/docker-machine.completion.bash	/^_docker_machine_use() {$/;"	f
+_docker_machine_version	bash_completion.d/docker-machine.completion.bash	/^_docker_machine_version() {$/;"	f
+_docker_network	bash_completion.d/docker.completion.bash	/^_docker_network() {$/;"	f
+_docker_network_connect	bash_completion.d/docker.completion.bash	/^_docker_network_connect() {$/;"	f
+_docker_network_create	bash_completion.d/docker.completion.bash	/^_docker_network_create() {$/;"	f
+_docker_network_disconnect	bash_completion.d/docker.completion.bash	/^_docker_network_disconnect() {$/;"	f
+_docker_network_inspect	bash_completion.d/docker.completion.bash	/^_docker_network_inspect() {$/;"	f
+_docker_network_ls	bash_completion.d/docker.completion.bash	/^_docker_network_ls() {$/;"	f
+_docker_network_rm	bash_completion.d/docker.completion.bash	/^_docker_network_rm() {$/;"	f
+_docker_node	bash_completion.d/docker.completion.bash	/^_docker_node() {$/;"	f
+_docker_node_accept	bash_completion.d/docker.completion.bash	/^_docker_node_accept() {$/;"	f
+_docker_node_demote	bash_completion.d/docker.completion.bash	/^_docker_node_demote() {$/;"	f
+_docker_node_inspect	bash_completion.d/docker.completion.bash	/^_docker_node_inspect() {$/;"	f
+_docker_node_list	bash_completion.d/docker.completion.bash	/^_docker_node_list() {$/;"	f
+_docker_node_ls	bash_completion.d/docker.completion.bash	/^_docker_node_ls() {$/;"	f
+_docker_node_promote	bash_completion.d/docker.completion.bash	/^_docker_node_promote() {$/;"	f
+_docker_node_remove	bash_completion.d/docker.completion.bash	/^_docker_node_remove() {$/;"	f
+_docker_node_rm	bash_completion.d/docker.completion.bash	/^_docker_node_rm() {$/;"	f
+_docker_node_tasks	bash_completion.d/docker.completion.bash	/^_docker_node_tasks() {$/;"	f
+_docker_node_update	bash_completion.d/docker.completion.bash	/^_docker_node_update() {$/;"	f
+_docker_pause	bash_completion.d/docker.completion.bash	/^_docker_pause() {$/;"	f
+_docker_port	bash_completion.d/docker.completion.bash	/^_docker_port() {$/;"	f
+_docker_ps	bash_completion.d/docker.completion.bash	/^_docker_ps() {$/;"	f
+_docker_pull	bash_completion.d/docker.completion.bash	/^_docker_pull() {$/;"	f
+_docker_push	bash_completion.d/docker.completion.bash	/^_docker_push() {$/;"	f
+_docker_rename	bash_completion.d/docker.completion.bash	/^_docker_rename() {$/;"	f
+_docker_restart	bash_completion.d/docker.completion.bash	/^_docker_restart() {$/;"	f
+_docker_rm	bash_completion.d/docker.completion.bash	/^_docker_rm() {$/;"	f
+_docker_rmi	bash_completion.d/docker.completion.bash	/^_docker_rmi() {$/;"	f
+_docker_run	bash_completion.d/docker.completion.bash	/^_docker_run() {$/;"	f
+_docker_save	bash_completion.d/docker.completion.bash	/^_docker_save() {$/;"	f
+_docker_search	bash_completion.d/docker.completion.bash	/^_docker_search() {$/;"	f
+_docker_service	bash_completion.d/docker.completion.bash	/^_docker_service() {$/;"	f
+_docker_service_create	bash_completion.d/docker.completion.bash	/^_docker_service_create() {$/;"	f
+_docker_service_inspect	bash_completion.d/docker.completion.bash	/^_docker_service_inspect() {$/;"	f
+_docker_service_list	bash_completion.d/docker.completion.bash	/^_docker_service_list() {$/;"	f
+_docker_service_ls	bash_completion.d/docker.completion.bash	/^_docker_service_ls() {$/;"	f
+_docker_service_remove	bash_completion.d/docker.completion.bash	/^_docker_service_remove() {$/;"	f
+_docker_service_rm	bash_completion.d/docker.completion.bash	/^_docker_service_rm() {$/;"	f
+_docker_service_scale	bash_completion.d/docker.completion.bash	/^_docker_service_scale() {$/;"	f
+_docker_service_tasks	bash_completion.d/docker.completion.bash	/^_docker_service_tasks() {$/;"	f
+_docker_service_update	bash_completion.d/docker.completion.bash	/^_docker_service_update() {$/;"	f
+_docker_start	bash_completion.d/docker.completion.bash	/^_docker_start() {$/;"	f
+_docker_stats	bash_completion.d/docker.completion.bash	/^_docker_stats() {$/;"	f
+_docker_stop	bash_completion.d/docker.completion.bash	/^_docker_stop() {$/;"	f
+_docker_swarm	bash_completion.d/docker.completion.bash	/^_docker_swarm() {$/;"	f
+_docker_swarm_init	bash_completion.d/docker.completion.bash	/^_docker_swarm_init() {$/;"	f
+_docker_swarm_inspect	bash_completion.d/docker.completion.bash	/^_docker_swarm_inspect() {$/;"	f
+_docker_swarm_join	bash_completion.d/docker.completion.bash	/^_docker_swarm_join() {$/;"	f
+_docker_swarm_leave	bash_completion.d/docker.completion.bash	/^_docker_swarm_leave() {$/;"	f
+_docker_swarm_update	bash_completion.d/docker.completion.bash	/^_docker_swarm_update() {$/;"	f
+_docker_tag	bash_completion.d/docker.completion.bash	/^_docker_tag() {$/;"	f
+_docker_top	bash_completion.d/docker.completion.bash	/^_docker_top() {$/;"	f
+_docker_unpause	bash_completion.d/docker.completion.bash	/^_docker_unpause() {$/;"	f
+_docker_update	bash_completion.d/docker.completion.bash	/^_docker_update() {$/;"	f
+_docker_version	bash_completion.d/docker.completion.bash	/^_docker_version() {$/;"	f
+_docker_volume	bash_completion.d/docker.completion.bash	/^_docker_volume() {$/;"	f
+_docker_volume_create	bash_completion.d/docker.completion.bash	/^_docker_volume_create() {$/;"	f
+_docker_volume_inspect	bash_completion.d/docker.completion.bash	/^_docker_volume_inspect() {$/;"	f
+_docker_volume_ls	bash_completion.d/docker.completion.bash	/^_docker_volume_ls() {$/;"	f
+_docker_volume_rm	bash_completion.d/docker.completion.bash	/^_docker_volume_rm() {$/;"	f
+_docker_wait	bash_completion.d/docker.completion.bash	/^_docker_wait() {$/;"	f
+_gem	bash_completion.d/gem.completion.bash	/^_gem() {$/;"	f
+_git_flow	bash_completion.d/git-flow-completion.bash	/^_git_flow ()$/;"	f
+_go	bash_completion.d/go.completion.bash	/^_go()$/;"	f
+_go_clear_cache	bash_completion.d/go.completion.bash	/^_go_clear_cache() {$/;"	f
+_go_importpath	bash_completion.d/go.completion.bash	/^_go_importpath()$/;"	f
+_go_importpath_cache	bash_completion.d/go.completion.bash	/^_go_importpath_cache() {$/;"	f
+_installcomp	bash_completion.d/gem.completion.bash	/^_installcomp() {$/;"	f
+_pip_completion	bash_completion.d/pip.completion.bash	/^_pip_completion()$/;"	f
+_python_django_completion	bash_completion.d/django.completion.bash	/^_python_django_completion()$/;"	f
+_rakecomplete	bash_completion.d/rake.completion.bash	/^_rakecomplete() {$/;"	f
+_sshcomplete	bash_completion.d/ssh.completion.bash	/^_sshcomplete() {$/;"	f
+_tmux	bash_completion.d/tmux.completion.bash	/^_tmux() {$/;"	f
+_tmux_complete_client	bash_completion.d/tmux.completion.bash	/^function _tmux_complete_client() {$/;"	f
+_tmux_complete_session	bash_completion.d/tmux.completion.bash	/^function _tmux_complete_session() {$/;"	f
+_tmux_complete_window	bash_completion.d/tmux.completion.bash	/^function _tmux_complete_window() {$/;"	f
+_tmux_expand	bash_completion.d/tmux.completion.bash	/^_tmux_expand ()$/;"	f
+_tmux_filedir	bash_completion.d/tmux.completion.bash	/^_tmux_filedir ()$/;"	f
+_uninstallcomp	bash_completion.d/gem.completion.bash	/^_uninstallcomp() {$/;"	f
+_vagrant	bash_completion.d/vagrant.completion.bash	/^_vagrant() {$/;"	f
+_vboxmanage	bash_completion.d/virtualbox.completion.bash	/^_vboxmanage() {$/;"	f
+_vboxmanage_realopts	bash_completion.d/virtualbox.completion.bash	/^_vboxmanage_realopts() {$/;"	f
+g:bookmark_auto_save	SpaceVim.d/init.vim	/^let g:bookmark_auto_save = 1$/;"	v
+g:bookmark_save_per_working_dir	SpaceVim.d/init.vim	/^let g:bookmark_save_per_working_dir = 1$/;"	v
+g:gutentags_enabled_dirs	SpaceVim.d/init.vim	/^let g:gutentags_enabled_dirs = ['~\/Dropbox\/projects', '~\/workspace']$/;"	v
+g:gutentags_enabled_user_func	SpaceVim.d/init.vim	/^let g:gutentags_enabled_user_func = 'CheckEnabledDirs'$/;"	v
+g:python2_host_prog	SpaceVim.d/init.vim	/^let g:python2_host_prog = $HOME.'\/.py2\/bin\/python'$/;"	v
+g:python3_host_prog	SpaceVim.d/init.vim	/^let g:python3_host_prog = $HOME.'\/.py3\/bin\/python3'$/;"	v
+g:spacevim_buffer_index_type	SpaceVim.d/init.vim	/^let g:spacevim_buffer_index_type = 1$/;"	v
+g:spacevim_colorscheme	SpaceVim.d/init.vim	/^let g:spacevim_colorscheme = 'gruvbox'$/;"	v
+g:spacevim_colorscheme_bg	SpaceVim.d/init.vim	/^let g:spacevim_colorscheme_bg = 'dark'$/;"	v
+g:spacevim_custom_plugins	SpaceVim.d/init.vim	/^let g:spacevim_custom_plugins = [$/;"	v
+g:spacevim_enable_debug	SpaceVim.d/init.vim	/^let g:spacevim_enable_debug = 1$/;"	v
+g:spacevim_enable_os_fileformat_icon	SpaceVim.d/init.vim	/^let g:spacevim_enable_os_fileformat_icon = 1$/;"	v
+g:spacevim_enable_statusline_display_mode	SpaceVim.d/init.vim	/^let g:spacevim_enable_statusline_display_mode = 0$/;"	v
+g:spacevim_enable_tabline_filetype_icon	SpaceVim.d/init.vim	/^let g:spacevim_enable_tabline_filetype_icon = 1$/;"	v
+g:spacevim_enable_vimfiler_welcome	SpaceVim.d/init.vim	/^let g:spacevim_enable_vimfiler_welcome = 1$/;"	v
+g:spacevim_guifont	SpaceVim.d/init.vim	/^let g:spacevim_guifont = 'DejaVu\\ Sans\\ Mono\\ for\\ Powerline\\ Book\\ 11'$/;"	v
+g:spacevim_realtime_leader_guide	SpaceVim.d/init.vim	/^let g:spacevim_realtime_leader_guide = 1$/;"	v
+prompt_command	bobby-all/bobby-all.theme.bash	/^function prompt_command() {$/;"	f

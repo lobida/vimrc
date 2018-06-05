@@ -28,6 +28,33 @@ let g:spacevim_colorscheme_bg = 'dark'
 " Bookmarks per working directory
 let g:bookmark_save_per_working_dir = 1
 let g:bookmark_auto_save = 1
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" My gutentags settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:gutentags_enabled_dirs = ['~/Dropbox/projects', '~/workspace', '~/projects']
+let g:gutentags_enabled_user_func = 'CheckEnabledDirs'
+
+function! CheckEnabledDirs(file)
+    let file_path = fnamemodify(a:file, ':p:h')
+
+    try
+        let gutentags_root = gutentags#get_project_root(file_path)
+        if filereadable(gutentags_root . '/.withtags')
+            return 1
+        endif
+    catch
+    endtry
+
+    for enabled_dir in g:gutentags_enabled_dirs
+        let enabled_path = fnamemodify(enabled_dir, ':p:h')
+
+        if match(file_path, enabled_path) == 0
+            return 1
+        endif
+    endfor
+
+    return 0
+endfunction
 " }}}
 
 " SpaceVim Custom Plugins: {{{

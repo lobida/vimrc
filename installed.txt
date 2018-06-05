@@ -148,3 +148,9 @@ sudo apt-get install xvkbd
 
 ln -s ~/vimrc/xbindkeysrc ~/.xbindkeysrc
 
+## ubuntu shortcut
+xdotool
+xdotool key Ctrl+c
+xdotool key Super+a
+xdotool key Control+Alt+Right
+xdotool key Control+Alt+Left
